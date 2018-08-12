@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from 'angularfire2/database';
+import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AdService {
 
-  constructor(private db: AngularFirestore) { }
+  constructor(private db: AngularFireDatabase ) { }
   
     /// Creates an Ad, then returns as an object
     // createAd(model): FirebaseObjectObservable<any> {
@@ -17,7 +17,8 @@ export class AdService {
     // }
 
   getData(): Observable<any>{
-    return this.db.collection('items').valueChanges();
+    return this.db.list('/items').valueChanges();
+
   }
 
   
