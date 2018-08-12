@@ -1,0 +1,52 @@
+<p>
+  form works!
+</p>
+
+<form [formGroup]="myForm" class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Type">Type:</label>
+    <div class="col-sm-10">
+      <input type="text" formControlName="Type" class="form-control" id="Type" placeholder="Enter email" name="Type">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Date">Date:</label>
+    <div class="col-sm-10">
+      <input type="text" formControlName="Date" class="form-control" id="Date" placeholder="Enter password" name="Date">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Location">Location:</label>
+    <div class="col-sm-10">
+      <input type="text" formControlName="Location" class="form-control" id="Location" placeholder="Enter password" name="Location">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Quantity">Quantity:</label>
+    <div class="col-sm-10">
+      <input type="text" formControlName="Quantity" class="form-control" id="Quantity" placeholder="Enter password" name="Quantity">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Status">Status:</label>
+    <div class="col-sm-10">
+      <input type="text" formControlName="Status" class="form-control" id="Status" placeholder="Enter password" name="Status">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="Description">Description:</label>
+    <div class="col-sm-10">
+      <input type="text" formControlName="Description" class="form-control" id="Description" placeholder="Enter password" name="Description">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" [disabled]="!myForm.valid" (click)="save()" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+<p>
+  Form Status: {{ myForm.value }} Form Status: {{ myForm.status }}
+</p>
