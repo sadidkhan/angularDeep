@@ -15,19 +15,25 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { environment } from '../environments/environment';
+import { ChartComponent } from './chart/chart.component';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { NgChartDemoComponent } from './ng-chart-demo/ng-chart-demo.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'form', component: FormComponent },
-  // { path: 'heroes', component: HeroesComponent }
+  { path: 'ng2-chart', component: NgChartDemoComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    DashboardComponent
+    DashboardComponent,
+    ChartComponent,
+    NgChartDemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,9 @@ const routes: Routes = [
     AngularFireDatabaseModule,
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
-    AngularFireStorageModule // imports firebase/storage only needed for storage features
+    AngularFireStorageModule, // imports firebase/storage only needed for storage features,
+    ChartsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

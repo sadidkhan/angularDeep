@@ -1,6 +1,6 @@
 [
-      { "Type": "A", "Date": "12/10/18", "Location": "Dhanmondi", "Status": "Death", "Description": "Nur e Makka" },
-      { "Type": "B", "Date": "05/07/18", "Location": "Uttara", "Status": "Death", "Description": "Nur e Makka" },
-      { "Type": "C", "Date": "11/10/18", "Location": "Rampura", "Status": "Injured", "Description": "Nur e Makka" },
-      { "Type": "D", "Date": "09/3/18", "Location": "Dhanmondi", "Status": "Death", "Description": "Nur e Makka" }
+      { "Type": "A", "Date": "12/10/18", "Location": "Dhanmondi", "Quantity": 2,  "Status": "Death", "Description": "Nur e Makka" },
+      { "Type": "B", "Date": "05/07/18", "Location": "Uttara", "Quantity": 2,"Status": "Death", "Description": "Nur e Makka" },
+      { "Type": "C", "Date": "11/10/18", "Location": "Rampura", "Quantity": 2,"Status": "Injured", "Description": "Nur e Makka" },
+      { "Type": "D", "Date": "09/3/18", "Location": "Dhanmondi","Quantity": 2, "Status": "Death", "Description": "Nur e Makka" }
     ]

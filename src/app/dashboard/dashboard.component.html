@@ -14,12 +14,19 @@
     </thead>
     <tbody>
       <tr *ngFor="let item of data">
-        <td>item.Type</td>
-        <td>item.Date</td>
-        <td>item.Location</td>
-        <td>item.Quantity</td>
-        <td>item.Status</td>
-        <td>item.Description</td>
+        <td>{{item.Type}}</td>
+        <td>{{item.Date}}</td>
+        <td>{{item.Location}}</td>
+        <td>{{item.Quantity}}</td>
+        <td>{{item.Status}}</td>
+        <td>{{item.Description}}</td>
       </tr>
     </tbody>
   </table>
+
+  <button (click)="generateDataForGraph('Year')">Year</button>
+  <button (click)="generateDataForGraph('Location')">location</button>
+  <button (click)="generateDataForGraph('Type')">type</button>  
+
+  
+  <!-- <app-chart [yaxisValues]="yaxisValue" [xaixsValues]="xaxisValue" [chartName]="chartName" [xaxisLabel]="xaxisLabel" ></app-chart> -->

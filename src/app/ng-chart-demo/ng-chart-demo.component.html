@@ -1,0 +1,12 @@
+<p>
+  ng-chart-demo works!
+</p>
+<div>
+  <canvas baseChart [datasets]="barChartData" 
+    [labels]="barChartLabels" 
+    [options]="barChartOptions"
+    [legend]="barChartLegend"
+    [chartType]="barChartType"></canvas>
+
+  <button (click)="changeData()">CLICK</button>
+</div>
